@@ -7,6 +7,6 @@ return array(
 		/**
 		 * Use the application cache for HTML Purifier
 		 */
-		// 'Cache.SerializerPath' => APPPATH.'cache',
+	'Cache.SerializerPath' => APPPATH.'cache',
 	),
 );
