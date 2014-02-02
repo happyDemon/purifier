@@ -9,4 +9,5 @@ return array(
 		 */
 	'Cache.SerializerPath' => APPPATH.'cache',
 	),
+	'composer_vendor_path' => APPPATH.'vendor'.DIRECTORY_SEPARATOR
 );

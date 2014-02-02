@@ -12,7 +12,7 @@
 class Purifier_Security extends Kohana_Security {
 
 	// Current purifier version
-	const PURIFIER = '1.2.1';
+	const PURIFIER = '1.2.2';
 
 	/**
 	 * @var  HTMLPurifier  singleton instance of the HTML Purifier object
@@ -39,11 +39,11 @@ class Purifier_Security extends Kohana_Security {
 				{
 					// Load the all of HTML Purifier right now.
 					// This increases performance with a slight hit to memory usage.
-					require Kohana::find_file('vendor', 'htmlpurifier/library/HTMLPurifier.includes');
+					require Kohana::$config->load('purifier.composer_vendor_path') . 'ezyang/htmlpurifier/library/HTMLPurifier.includes.php';
 				}
 
 				// Load the HTML Purifier auto loader
-				require Kohana::find_file('vendor', 'htmlpurifier/library/HTMLPurifier.auto');
+				require Kohana::$config->load('purifier.composer_vendor_path') . 'ezyang/htmlpurifier/library/HTMLPurifier.auto.php';
 			}
 
 			// Create a new configuration object

@@ -1,0 +1,20 @@
+{
+	"name"       :"happydemon/purifier",
+	"type"       :"kohana-module",
+	"description":"Packages HTML purifier",
+	"keywords"   :["kohana", "XSS", "html", "purifier", "security"],
+	"homepage"   :"https://github.com/happyDemon/purifier",
+	"license"    :"MIT",
+	"authors"    :[
+		{
+			"name"    :"Maxim Kerstens",
+			"email"   :"maxim.kerstens@gmail.com",
+			"role"    :"Developer"
+		}
+	],
+	"require"    :{
+		"php"                       :">5.3.2",
+		"composer/installers"       : "*",
+		"ezyang/htmlpurifier"       : "4.6.*"
+	}
+}
